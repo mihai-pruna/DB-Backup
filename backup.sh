@@ -11,7 +11,7 @@ DB_HOST="${DB_HOST}"
 DB_USER="${DB_USER}"
 DB_PASSWORD="${DB_PASSWORD}"
 DB_NAME="${DB_NAME}"
-BACKUP_FILE="mysql_backup_$(date +\%Y-\%m-\%d).sql"
+BACKUP_FILE="mysql_backup_$(date +'%Y-%m-%d').sql"
 
 # Dump the database to a SQL file
 mysqldump -h $DB_HOST -u $DB_USER -p$DB_PASSWORD $DB_NAME > $BACKUP_FILE
