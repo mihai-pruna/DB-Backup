@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Set the database credentials and backup file name
 #DB_HOST="localhost"
