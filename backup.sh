@@ -17,4 +17,4 @@ BACKUP_FILE="mysql_backup_$(date +\%Y-\%m-\%d).sql"
 mysqldump -h $DB_HOST -u $DB_USER -p$DB_PASSWORD $DB_NAME > $BACKUP_FILE
 
 # Print a success message
-echo 'MySQL database backup complete: "${BACKUP_FILE}"'
+echo 'MySQL database backup complete'
